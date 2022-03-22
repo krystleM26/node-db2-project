@@ -1,11 +1,19 @@
+const db = require('../../data/db-config')
+
 const getAll = () => {
-  // DO YOUR MAGIC
+  return db ('cars')
 }
 
 const getById = () => {
-  // DO YOUR MAGIC
+  return da('cars').where('id', id).first()
 }
 
 const create = () => {
-  // DO YOUR MAGIC
+  return db('cars').insert({vin: '', make: '', model:'', milage: '', title: '', transmission: ''})
+}
+
+module.exports = {
+  getAll,
+  getById,
+  create,
 }
